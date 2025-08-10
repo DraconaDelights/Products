@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dracona Delights — Dragonfruit Powder</title>
+  <meta name="description" content="Vibrant, antioxidant-rich dragonfruit (pitaya) powder for drinks, baking, and wellness." />
+  <link rel="icon" href="assets/favicon.svg">
+  <!-- Tailwind via CDN (no build step needed) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dragon: {
+              pink: '#ec2f7f',
+              green: '#35b86b',
+              rind: '#f6d7e5'
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-gradient-to-b from-white via-dragon-rind/40 to-white text-neutral-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#home" class="flex items-center gap-2">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" fill="#ec2f7f"/>
+          <path d="M12 2c2.5 3.5 2.5 7 0 10-2.5-3-2.5-6.5 0-10z" fill="#35b86b"/>
+        </svg>
+        <span class="font-semibold tracking-tight">Dracona Delights</span>
+      </a>
+      <nav class="hidden md:flex items-center text-sm">
+        <a href="#features" class="px-3 py-2 hover:opacity-80">Features</a>
+        <a href="#products" class="px-3 py-2 hover:opacity-80">Products</a>
+        <a href="#reviews" class="px-3 py-2 hover:opacity-80">Reviews</a>
+        <a href="#faq" class="px-3 py-2 hover:opacity-80">FAQ</a>
+        <a href="#contact" class="ml-2 rounded-2xl border px-4 py-2 hover:bg-neutral-50">Contact</a>
+        <a href="#buy" class="ml-2 rounded-2xl bg-dragon-pink px-4 py-2 text-white shadow hover:shadow-md">Buy Now</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden rounded-xl border px-3 py-2 text-sm">Menu</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-3 grid gap-2">
+        <a href="#features" class="rounded-xl px-3 py-2 hover:bg-neutral-50">Features</a>
+        <a href="#products" class="rounded-xl px-3 py-2 hover:bg-neutral-50">Products</a>
+        <a href="#reviews" class="rounded-xl px-3 py-2 hover:bg-neutral-50">Reviews</a>
+        <a href="#faq" class="rounded-xl px-3 py-2 hover:bg-neutral-50">FAQ</a>
+        <a href="#contact" class="rounded-xl px-3 py-2 hover:bg-neutral-50">Contact</a>
+        <a href="#buy" class="rounded-xl px-3 py-2 bg-dragon-pink text-white">Buy Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative">
+    <div class="mx-auto grid max-w-6xl grid-cols-1 items-center gap-8 px-4 py-16 md:grid-cols-2">
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Brighten your day with Dragonfruit Powder.</h1>
+        <p class="mt-4 text-neutral-600">Naturally vibrant pitaya packed with antioxidants, fiber, and vitamin C — perfect for smoothies, baking, and beautiful beverages.</p>
+        <div class="mt-6 flex flex-wrap items-center gap-3">
+          <a href="#buy" class="rounded-2xl bg-dragon-pink px-5 py-3 text-white shadow hover:shadow-lg">Buy Now</a>
+          <a href="#features" class="rounded-2xl border px-5 py-3 hover:bg-neutral-50">See Features</a>
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-sm text-neutral-600">
+          <span>✅ 7‑day returns</span>
+          <span>✅ Free shipping ₱1,500+</span>
+          <span>✅ All‑natural</span>
+        </div>
+      </div>
+      <div>
+        <div class="relative overflow-hidden rounded-3xl border bg-white p-4 shadow-sm">
+  <div class="grid grid-cols-2 gap-3">
+    <img src="dragfruitpowder1.jpg" alt="Dragonfruit on board" class="rounded-xl w-full h-48 md:h-56 object-cover" />
+    <img src="dragfruit2.jpg" alt="Dragonfruit on white background" class="rounded-xl w-full h-48 md:h-56 object-cover" />
+    <img src="dragfruitpowder2.jpg" alt="Dragonfruit powder pile" class="rounded-xl w-full h-48 md:h-56 object-cover" />
+    <img src="dragfruit1.jpg" alt="Dragonfruit powder in bowl" class="rounded-xl w-full h-48 md:h-56 object-cover" />
+  </div>
+  <p class="mt-3 text-center text-xs text-neutral-500">
+    Naturally vibrant. Freshly processed dragonfruit products.
+  </p>
+</div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="border-t bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-2xl font-semibold">Why Dracona?</h2>
+      <p class="mt-2 text-neutral-600">Color, nutrition, and taste — naturally.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <div class="h-10 w-10 rounded-xl bg-dragon-pink/20"></div>
+          <h3 class="mt-4 font-semibold">Vibrant Color</h3>
+          <p class="mt-1 text-sm text-neutral-600">Adds a brilliant magenta hue to drinks and desserts without artificial dyes.</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <div class="h-10 w-10 rounded-xl bg-dragon-green/20"></div>
+          <h3 class="mt-4 font-semibold">Antioxidant-Rich</h3>
+          <p class="mt-1 text-sm text-neutral-600">Loaded with betalains and vitamin C for everyday wellness.</p>
+        </div>
+        <div class="rounded-2xl border bg-white p-6 shadow-sm">
+          <div class="h-10 w-10 rounded-xl bg-rose-100"></div>
+          <h3 class="mt-4 font-semibold">Versatile</h3>
+          <p class="mt-1 text-sm text-neutral-600">Blend, bake, or stir into yogurt — your color‑pop companion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products / Pricing -->
+  <section id="products" class="bg-gradient-to-b from-white to-dragon-rind/40">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-2xl font-semibold">Choose your pack</h2>
+      <p class="mt-2 text-neutral-600">Craft, café, or family — we’ve got a size for you.</p>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="relative rounded-3xl border bg-white p-6 shadow-sm">
+          <div class="text-sm text-dragon-pink">Starter</div>
+          <h3 class="mt-1 text-xl font-semibold">100 g</h3>
+          <div class="mt-2 text-3xl font-bold">₱299</div>
+          <ul class="mt-4 space-y-2 text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span>•</span>Perfect for 8–10 smoothies</li>
+            <li class="flex items-start gap-2"><span>•</span>Resealable pouch</li>
+            <li class="flex items-start gap-2"><span>•</span>Single‑origin</li>
+          </ul>
+          <a href="#buy" class="mt-6 inline-block w-full rounded-2xl bg-dragon-pink px-4 py-3 text-center text-white hover:shadow">Add to cart</a>
+        </div>
+        <div class="relative rounded-3xl border bg-white p-6 shadow-sm ring-2 ring-dragon-pink/30">
+          <div class="text-sm text-dragon-pink">Best Value</div>
+          <h3 class="mt-1 text-xl font-semibold">250 g</h3>
+          <div class="mt-2 text-3xl font-bold">₱649</div>
+          <ul class="mt-4 space-y-2 text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span>•</span>Barista‑friendly</li>
+            <li class="flex items-start gap-2"><span>•</span>Recipe card included</li>
+            <li class="flex items-start gap-2"><span>•</span>Free shipping add‑on eligible</li>
+          </ul>
+          <a href="#buy" class="mt-6 inline-block w-full rounded-2xl bg-dragon-pink px-4 py-3 text-center text-white hover:shadow">Add to cart</a>
+        </div>
+        <div class="relative rounded-3xl border bg-white p-6 shadow-sm">
+          <div class="text-sm text-dragon-pink">Bulk</div>
+          <h3 class="mt-1 text-xl font-semibold">1 kg</h3>
+          <div class="mt-2 text-3xl font-bold">₱2,290</div>
+          <ul class="mt-4 space-y-2 text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span>•</span>Cafés and bakeries</li>
+            <li class="flex items-start gap-2"><span>•</span>Wholesale pricing available</li>
+            <li class="flex items-start gap-2"><span>•</span>Contact us for B2B</li>
+          </ul>
+          <a href="#buy" class="mt-6 inline-block w-full rounded-2xl bg-dragon-pink px-4 py-3 text-center text-white hover:shadow">Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="border-t bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-2xl font-semibold">What customers say</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <blockquote class="rounded-2xl border bg-white p-6 shadow-sm">
+          <p class="text-sm">“Color payoff is insane — my café drinks go viral.”</p>
+          <div class="mt-3 text-xs text-neutral-500">— Barista owner</div>
+        </blockquote>
+        <blockquote class="rounded-2xl border bg-white p-6 shadow-sm">
+          <p class="text-sm">“Tastes clean and fruity. Kids love the pink pancakes.”</p>
+          <div class="mt-3 text-xs text-neutral-500">— Mom of two</div>
+        </blockquote>
+        <blockquote class="rounded-2xl border bg-white p-6 shadow-sm">
+          <p class="text-sm">“Great in smoothies after workouts. Not too sweet.”</p>
+          <div class="mt-3 text-xs text-neutral-500">— Uni student</div>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="bg-gradient-to-b from-white to-dragon-rind/40">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-2xl font-semibold">FAQ</h2>
+      <div class="mt-6 divide-y rounded-2xl border bg-white">
+        <details class="group p-5 open:bg-rose-50/40">
+          <summary class="cursor-pointer list-none font-medium">Is it 100% natural?</summary>
+          <p class="mt-2 text-sm text-neutral-700">Yes. Freeze‑dried dragonfruit with no artificial colorants.</p>
+        </details>
+        <details class="group p-5 open:bg-rose-50/40">
+          <summary class="cursor-pointer list-none font-medium">How do I use it?</summary>
+          <p class="mt-2 text-sm text-neutral-700">Start with 1–2 tsp in smoothies, lattes, or batter. Adjust to taste.</p>
+        </details>
+        <details class="group p-5 open:bg-rose-50/40">
+          <summary class="cursor-pointer list-none font-medium">Do you ship nationwide?</summary>
+          <p class="mt-2 text-sm text-neutral-700">We ship across the Philippines. Free shipping for orders ₱1,500+.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t bg-white">
+    <div class="mx-auto max-w-6xl px-4 py-16">
+      <h2 class="text-2xl font-semibold">Contact us</h2>
+      <p class="mt-2 text-neutral-600">Wholesale, collab, or questions? Send a message.</p>
+      <form class="mt-6 grid gap-4 md:grid-cols-2" onsubmit="event.preventDefault(); alert('Thanks! This demo form does not send emails. Replace with Formspree or a backend.');">
+        <input placeholder="Name" class="rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-dragon-pink/50" />
+        <input placeholder="Email" type="email" class="rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-dragon-pink/50" />
+        <textarea placeholder="Message" class="md:col-span-2 h-32 rounded-xl border px-4 py-3 outline-none focus:ring-2 focus:ring-dragon-pink/50"></textarea>
+        <button type="submit" class="md:col-span-2 w-full rounded-2xl bg-dragon-pink px-4 py-3 text-white hover:shadow">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t bg-white">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 py-8 md:flex-row">
+      <div class="flex items-center gap-2">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <circle cx="12" cy="12" r="10" fill="#ec2f7f"/>
+          <path d="M12 2c2.5 3.5 2.5 7 0 10-2.5-3-2.5-6.5 0-10z" fill="#35b86b"/>
+        </svg>
+        <span class="font-semibold">Dracona Delights</span>
+      </div>
+      <p class="text-sm text-neutral-500">© <span id="year"></span> Dracona Delights. All rights reserved.</p>
+      <div class="flex items-center gap-3 text-sm">
+        <a href="#" class="hover:opacity-80">Instagram</a>
+        <a href="#" class="hover:opacity-80">TikTok</a>
+        <a href="#" class="hover:opacity-80">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // mobile menu
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn && btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+    // year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
